@@ -1,0 +1,16 @@
+<package format="2">
+  <name>mitsutoyo_ros</name>
+  <version>0.1.0</version>
+  <description> ROS interface for mitsutoyo micrometer </description>
+
+  <maintainer email="yuki.asano3206@gmail.com">Yuki Asano</maintainer>
+  <author email="yuki.asano3206@gmail.com">Yuki Asano</author>
+
+  <license>BSD</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <depend>rospy</depend>
+  <depend>std_msgs</depend>
+
+</package>
