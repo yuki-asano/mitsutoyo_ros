@@ -4,12 +4,26 @@ project(mitsutoyo_ros)
 find_package(catkin REQUIRED COMPONENTS
   std_msgs
   rospy
+  message_generation
 )
 
 catkin_python_setup()
 
-catkin_package()
+add_message_files(
+  FILES
+  MitsutoyoMicrometer.msg
+  )
 
+generate_messages(
+  DEPENDENCIES
+  std_msgs
+  )
+
+catkin_package(
+  CATKIN_DEPENDS message_runtime rospy std_msgs
+  )
+
+# install
 catkin_install_python(
   PROGRAMS
   scripts/get_value_by_cmd.py

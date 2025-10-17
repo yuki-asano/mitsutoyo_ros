@@ -1,0 +1,3 @@
+uint32 sample_id
+string sample_name
+float32 value
